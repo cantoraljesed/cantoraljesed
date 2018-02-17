@@ -1,0 +1,4 @@
+baseURL = "http://cantoraljesed.com/"
+languageCode = "es-MX"
+title = "Cantoral Jesed"
+theme = "jesed"

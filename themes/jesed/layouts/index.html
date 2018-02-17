@@ -1,0 +1,11 @@
+{{ define "main" }}
+	<h1>Cantos</h1>
+	<input type="text" onkeyup="onChange(this)" />
+	{{ range (.Data.Pages.ByParam "number") }}
+    <div class="song">
+    	<a href="{{.Permalink}}"><p><small class="number">{{ .Param "number" }}</small> <span class="title">{{ .Title }}</span></p></a>
+    	<p class="firstline">{{ .Param "firstline" }}</p>
+    </div>
+  	{{ end }}
+  	<script src="/js/cantoral.js"></script>
+{{ end }}
