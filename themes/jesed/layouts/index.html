@@ -1,6 +1,6 @@
 {{ define "main" }}
 	<h1>Cantos</h1>
-	<input type="text" onkeyup="onChange(this)" />
+	<input type="text" onkeyup="onChange(this)" placeholder="Buscar" />
 	{{ range (.Data.Pages.ByParam "number") }}
     <div class="song">
     	<a href="{{.Permalink}}"><p><small class="number">{{ .Param "number" }}</small> <span class="title">{{ .Title }}</span></p></a>
